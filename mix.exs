@@ -40,7 +40,7 @@ defmodule Joken.Mixfile do
 
   defp deps do
     [
-      {:jose, "~> 1.11.2"},
+      {:jose, git: "https://github.com/gfodor/erlang-jose.git", branch: "es256k"},
       {:jason, "~> 1.2", only: [:dev, :test]},
       {:benchee, "~> 1.0", only: :dev},
 
